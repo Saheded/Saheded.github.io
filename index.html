@@ -1,0 +1,378 @@
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Merriweather:700" rel="stylesheet">
+        <title>Итоговый проект</title>
+    </head>
+    <style>
+        html{
+            background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOTIwIDMzNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTkyMCAzMzU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtjbGlwLXBhdGg6dXJsKCNTVkdJRF8yXyk7fQ0KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojQUZBRkFGO3N0cm9rZS13aWR0aDowLjMwMzt9DQoJLnN0MntmaWxsOiNCN0I3Qjc7fQ0KPC9zdHlsZT4NCjxnPg0KCTxkZWZzPg0KCQk8cmVjdCBpZD0iU1ZHSURfMV8iIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjMzNSIvPg0KCTwvZGVmcz4NCgk8Y2xpcFBhdGggaWQ9IlNWR0lEXzJfIj4NCgkJPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iICBzdHlsZT0ib3ZlcmZsb3c6dmlzaWJsZTsiLz4NCgk8L2NsaXBQYXRoPg0KCTxnIGNsYXNzPSJzdDAiPg0KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNLTMwMy41MjIsMzY4LjM0OWM1MjcuMTgxLTk0LjIyNCwxMDQxLjU3OC0zMDkuNTgyLDEzOTQuNDE0LTQwLjU2NyIvPg0KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNLTMwMi4xNDcsMzU3LjQ1NmMyMzQuOTkzLTM5LjExNCw5NzEuMzExLTE3NC40MDksNTEzLjg5LTQzMy44MDEiLz4NCgkJPHBhdGggY2xhc3M9InN0MiIgZD0iTTQ5MC4xMzcsMjA5LjM5NGMtMC4yNTgsMi43NjEtMi43MDYsNC43OTItNS40NjQsNC41MzFjLTIuNzU4LTAuMjYxLTQuNzg1LTIuNzA5LTQuNTIzLTUuNDY3DQoJCQljMC4yNTktMi43NjUsMi42OTktNC43ODYsNS40Ni00LjUzMUM0ODguMzcxLDIwNC4xODksNDkwLjM5OCwyMDYuNjM3LDQ5MC4xMzcsMjA5LjM5NCIvPg0KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTUwLjQ2NCwyNzIuOTdjLTAuMjU1LDIuNzYyLTIuNzAyLDQuNzg1LTUuNDYsNC41MjRjLTIuNzYxLTAuMjU4LTQuNzg1LTIuNzAyLTQuNTMxLTUuNDYNCgkJCWMwLjI2Mi0yLjc2MSwyLjcwNi00Ljc4NSw1LjQ2Ny00LjUzQzE0OC42OTksMjY3Ljc2NSwxNTAuNzI2LDI3MC4yMDksMTUwLjQ2NCwyNzIuOTciLz4NCgkJPHBhdGggY2xhc3M9InN0MiIgZD0iTTM0NC42NDQsMTM4Ljk4Yy0wLjM3Niw0LjAwNS0zLjkyOSw2Ljk1My03LjkzNCw2LjU3M2MtNC4wMTMtMC4zNzMtNi45Ni0zLjkyMy02LjU4LTcuOTM1DQoJCQljMC4zNzMtNC4wMDksMy45My02Ljk1Niw3LjkzOC02LjU3NkMzNDIuMDc3LDEzMS40MTUsMzQ1LjAyNSwxMzQuOTY1LDM0NC42NDQsMTM4Ljk4Ii8+DQoJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0yNjguMDUtNDUuNWMtMC4zNzcsNC4wMTYtMy45Myw2Ljk2My03LjkzOSw2LjU4M2MtNC4wMTItMC4zNzctNi45NTYtMy45My02LjU3OS03Ljk0Mg0KCQkJYzAuMzczLTQuMDA5LDMuOTI5LTYuOTUzLDcuOTM4LTYuNTczQzI2NS40NzgtNTMuMDU1LDI2OC40MjYtNDkuNTA1LDI2OC4wNS00NS41Ii8+DQoJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0zNy4xNDMsMjg1LjgxOWMtMC4yNTQsMi43NTgtMi42OTgsNC43NzktNS40NTIsNC41MjFjLTIuNzUxLTAuMjYxLTQuNzc5LTIuNjk4LTQuNTE3LTUuNDUyDQoJCQljMC4yNjEtMi43NTgsMi43MDEtNC43NzgsNS40NTYtNC41MjFDMzUuMzgsMjgwLjYyMSwzNy40MDQsMjgzLjA2NSwzNy4xNDMsMjg1LjgxOSIvPg0KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNLTIzNi43MjcsMzQ2LjMyNGMtMC4yNTUsMi43NjUtMi42OTUsNC43ODItNS40NDksNC41MjFjLTIuNzU1LTAuMjU0LTQuNzc1LTIuNjk4LTQuNTIxLTUuNDUyDQoJCQljMC4yNjEtMi43NTcsMi43MDEtNC43NzgsNS40NTUtNC41MTdDLTIzOC40OTEsMzQxLjEzMy0yMzYuNDY3LDM0My41NzctMjM2LjcyNywzNDYuMzI0Ii8+DQoJPC9nPg0KCTxnIGNsYXNzPSJzdDAiPg0KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTkyMCw2NS4zODZDMTQ0Ni4yNzIsOTguMyw5NzIuMjg5LDIzOS4yMjIsNjg2LjgyMS0zMS41MDkiLz4NCgkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE5MTcuNzUxLDc0Ljg1OGMtMjEwLjg5MiwxMi4xMjctODcyLjkwMyw2MS4zNTMtNDk0LjMxNywzMzMuNTUxIi8+DQoJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjA1LjE4NSwxMzAuMDE1YzAuNDktMi40MSwyLjg0Mi0zLjk2Nyw1LjI0OC0zLjQ3NGMyLjQwNiwwLjQ5MywzLjk2LDIuODQ0LDMuNDY4LDUuMjUNCgkJCWMtMC40OTEsMi40MTMtMi44MzQsMy45NjItNS4yNDUsMy40NzVDMTIwNi4yNDcsMTM0Ljc3MiwxMjA0LjY5MywxMzIuNDIxLDEyMDUuMTg1LDEzMC4wMTUiLz4NCgkJPHBhdGggY2xhc3M9InN0MiIgZD0iTTE1MTAuNjksMTA2LjI4MWMwLjQ4Ny0yLjQxLDIuODM4LTMuOTYyLDUuMjQ0LTMuNDY5YzIuNDEsMC40OSwzLjk2MiwyLjgzNywzLjQ3NSw1LjI0NQ0KCQkJYy0wLjQ5MywyLjQwOS0yLjg0LDMuOTYxLTUuMjUxLDMuNDc0QzE1MTEuNzUxLDExMS4wMzgsMTUxMC4xOTcsMTA4LjY5LDE1MTAuNjksMTA2LjI4MSIvPg0KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTMyNi43NTMsMjA1LjkzNGMwLjcxMy0zLjQ5NSw0LjEyNS01Ljc1Niw3LjYyLTUuMDRjMy41MDIsMC43MTEsNS43NjMsNC4xMjEsNS4wNDYsNy42MjENCgkJCWMtMC43MSwzLjQ5OS00LjEyNiw1Ljc1OS03LjYyNCw1LjA0MkMxMzI4LjI5NywyMTIuODQ3LDEzMjYuMDM2LDIwOS40MzgsMTMyNi43NTMsMjA1LjkzNCIvPg0KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTM3Ni43MjgsMzc1Ljg1OWMwLjcxNS0zLjUwNCw0LjEyNy01Ljc2NSw3LjYyNS01LjA0OWMzLjUwMSwwLjcxNCw1Ljc1OSw0LjEyNiw1LjA0NSw3LjYyOA0KCQkJYy0wLjcxLDMuNDk5LTQuMTI2LDUuNzU2LTcuNjIzLDUuMDM5QzEzNzguMjc3LDM4Mi43NjQsMTM3Ni4wMTYsMzc5LjM1NCwxMzc2LjcyOCwzNzUuODU5Ii8+DQoJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNjExLjgxNywxMDUuNzM1YzAuNDg3LTIuNDA3LDIuODMzLTMuOTU2LDUuMjM3LTMuNDY3YzIuNCwwLjQ5MiwzLjk1NiwyLjgzMywzLjQ2NCw1LjIzNg0KCQkJYy0wLjQ5MywyLjQwNi0yLjgzNiwzLjk1NS01LjI0LDMuNDY2QzE2MTIuODc3LDExMC40ODUsMTYxMS4zMjUsMTA4LjEzOCwxNjExLjgxNywxMDUuNzM1Ii8+DQoJCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xODU5LjAxOCw3OC40NDhjMC40ODgtMi40MTQsMi44MzEtMy45Niw1LjIzNC0zLjQ2OGMyLjQwNCwwLjQ4NiwzLjk1MywyLjgzMiwzLjQ2Nyw1LjIzNw0KCQkJYy0wLjQ5MywyLjQwNi0yLjgzNiwzLjk1NS01LjIzOSwzLjQ2M0MxODYwLjA3OSw4My4xOTIsMTg1OC41MjcsODAuODQ1LDE4NTkuMDE4LDc4LjQ0OCIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K")50%/contain;
+        }
+        body {
+            font-family: "Merriweather";
+            font-size: 1.1 inherit;
+            position: relative;
+            margin: 150px;
+        }
+        strong {
+            color: #cac734;
+        }
+        main {
+            width: 100%;
+            height: 85ex;
+            margin: 0 auto;
+            font-size: 20;
+            color:#444;
+            position: sticky;
+        }
+        footer {
+            color:#444;
+            position: fixed;
+            font-family: "Pacifico";
+            bottom: 0;
+            left: 5ex;
+            width: 30ex;
+        }
+        em{
+            color: #25ADC4;
+            font-family: "Merriweather" cursive;
+            height: 20px;
+            width: 20px;
+        }
+        a {
+            text-decoration: unset;
+            color:rgb(0, 0, 0);
+            text-shadow: 10px -5px 3px #444,0 0 1em #444;
+            transition: 100ms linear;
+            height: 120px;
+            font-size: 50px;
+            line-height: 100px;
+            z-index: 1;
+        }
+        h1 {
+            color: hsl(0, 94%, 69%);
+            font-family: "Pacifico";
+            text-align: center;
+            font-weight: 100%;
+        }
+        h2 {
+            color: hsl(0, 94%, 69%);
+            font-weight: 400px;
+            size: 2 inherit;
+            text-align: center; 
+            height:3.2%;
+            margin: 3%;
+            margin-top: 50px;
+            font-family: "Pacifico";
+        }
+        h3 {
+            font-size: 1 inherit;
+            color:rgb(1, 217, 255);
+            text-align: left;
+            position: relative;
+            left: 25%;
+            width: 55%;
+        }
+        ul {
+            color: #555;
+            line-height: 20px;
+            margin:0 0% 0 0%;
+        }
+        p {
+            position: relative;
+            width: 55%;
+            left: 25%;
+            font-family: "Merriweather";
+            line-height: 30px;
+        }
+        nav {
+            height: 100%;
+            font-family: "Pacifico";
+        }
+        .navigation{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 25%;
+            height: 25%;
+            z-index: 1;
+        }
+        .block_1{
+            width: 50%;
+            height: auto;
+            background: indianred;
+        }
+        header {
+            width:100%;
+            height:100%;
+        }
+        a:hover {
+            color:rgb(0, 195, 255);
+            text-shadow: 10px -5px 3px rgb(0, 102, 133),0 0 1em rgb(0, 195, 255);
+        }
+        li {
+            font-family: "Pacifico";
+            position: relative;
+            top: 40px;
+            padding: 3px;
+            list-style-type: none;
+        }
+        li.list{
+            color:rgb(0, 163, 192);
+            font-family: "Pacifico";
+            height: 20px;
+            width: 20px;
+        }
+        .foto-now {
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/FRNZ7200.jpeg") 50%/contain no-repeat;
+        }
+        .reward_1{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/2008_Gramota,_Sergeevu_A.N._v_chest_380_L.goroda.jpg") 50%/contain no-repeat;
+        }
+        .reward_2{
+            position: relative;
+            height: 75exx;
+            background: url("./imgs/2010_MFINS_23.jpg") 50%/contain no-repeat;
+        }
+        .reward_3{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/2010_Progimnasiya.jpg") 50%/contain no-repeat;
+        }
+        .reward_4{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/2012_Akademia_borbi_NM.Mindiashvyili.jpg") 50%/contain no-repeat;
+        }
+        .reward_5{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/2012_MBSH.jpg") 50%/contain no-repeat;
+        }
+        .reward_6{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/2012_Oyama_kiokushinkai.JPG") 50%/contain no-repeat;
+        }
+        .reward_7{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/Diplom_laur.jpg") 50%/contain no-repeat;
+        }
+        .reward_8{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/Diplom_SHUR.jpg") 50%/contain no-repeat;
+        }
+        .reward_9{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/HGU_Studencheskaya_moda.jpg") 50%/contain no-repeat;
+        }
+        .reward_12{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/Screenshot_158.png") 50%/contain no-repeat;
+        }
+        .reward_13{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/Screenshot_159.png") 50%/contain no-repeat;
+        }
+        .reward_15{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/Screenshot_161.png") 50%/contain no-repeat;
+        }
+        .reward_16{
+            position: relative;
+            height: 75ex;
+            background: url("./imgs/Screenshot_162.png") 50%/contain no-repeat;
+        }
+        object{
+            text-align: center;
+            position: relative;
+            left:16ex;
+            height: 60ex;
+            margin: 10ex;
+            top: -7ex;
+            box-shadow: 2px 2px 10px #444,0 0 1em #444;
+        }
+        .steam{
+            text-decoration: unset;
+            color:inherit;
+            text-shadow: 10px -5px 3px #444,0 0 1em #444;
+            transition: 100ms linear;
+            z-index: 1;
+            font-size: inherit;
+        }
+        .steam:hover{
+            color:rgb(0, 195, 255);
+            text-shadow: 10px -5px 3px rgb(0, 102, 133),0 0 1em rgb(0, 195, 255);
+        }
+        *{box-sizing:border-box}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes loader {
+  0% {transform:rotate(-45deg)}
+  50%{transform:rotate(-135deg)}
+  100%{transform:rotate(-225deg)}}
+@keyframes span-1 {
+  0% {transform:translate(0);}
+  50%{transform:translate(-50px, 0);border-color:#EE4D68}
+  100%{transform:translate(0);}}
+@keyframes span-2 {
+  0%{transform:translate(0);}
+  50%{transform:translate(50px, 0);border-color:#875678}
+  100%{transform:translate(0);}}
+@keyframes span-3 {
+  0%{transform:translate(0);}
+  50%{transform:translate(0, -50px);border-color:#FF9900}
+  100%{transform:translate(0);}}
+@keyframes span-4 {
+  0%{transform:translate(0);}
+  50%{transform:translate(0, 50px);border-color:#00E4F6}
+  100%{transform:translate(0);}}
+.loader {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: loader 2s infinite ease-in-out;
+  top:7ex;
+  left: 60ex;
+}
+.loader span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 4px solid #0B1B48;
+}
+.loader span:nth-child(1) {
+  animation: span-1 2s ease-in-out infinite;
+}
+.loader span:nth-child(2) {
+  animation: span-2 2s ease-in-out infinite;
+}
+.loader span:nth-child(3) {
+  animation: span-3 2s ease-in-out infinite;
+}
+.loader span:nth-child(4) {
+  animation: span-4 2s ease-in-out infinite;
+}
+
+    </style>
+    <body>
+        <div class="navigation">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#begin">Биография</a></li>
+                        <li><a href="#rewards">Награды</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main>
+            <h1>Анатолий Николаевич Сергеев</h1>
+            <div class="foto-now"></div>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span></div>
+            <h2 id="begin">Биография</h2>
+            <p>
+                <em>Дата рождения: </em> 29.11.1972<br>
+                <em>Место рождения: </em>: п. Балахта, Балахтинского района, Красноярского края<br>
+                <em>E-mail: </em>Anatolyser@gmail.com<br>Женат, 2 сына<br>
+            </p>
+            <h3>Образование</h3>
+            <p>
+                <em>1990 – 1995 Красноярский государственный университет </em><br> Факультет: математика.  Специальность: математик. <br>
+                <em>2001 – 2002 Международный институт менеджмента ЛИНК</em><br> Сертификат «Профессиональный менеджер»<br>
+                <em>2006 – 2009 Государственный университет Управления, г. Москва</em><br> MBА в сфере Информационных технологий.<br>
+                <em>2010, 2012  Школа управленческого резерва Красноярского края</em>
+            </p>
+            <h3>Партийность</h3>
+            <p>
+                <em>Беспартийный</em>
+            </p>
+            <h3>Членство в общественных, деловых объединениях</h3>
+            <p>
+                Член Правления Общественной организации «Ассоциация управленческого резерва Красноярского края» (ОО «АУРА»)<br>
+                Заместитель председателя Объединенного комитета «Цифровая экономика и информационные технологии», при поддержке ЦС ТПП, СППКК (РСПП), Опора России, Деловая Россия, Ассоциации выпускников президентской программы «РУС»                    
+            </p>
+            <h3>Опыт работы</h3>
+            <p>
+                С 2016 г. Ассоциация технологических предприятий «Эра Интеллектуальных Технологий» (Ассоциация «ИТЭРА»), директор <br>
+                2017 – н.вр. ООО «Плоддер» ГК «СибитSystems»,	 управляющий<br>
+                2011 - 2016 г. ООО «СибИТ-Проекты»,	 генеральный директор <br>
+                2007 - 2011 г. ООО «НПК СибИТ»,	 генеральный директор <br>
+                2000–2007  ООО «СибИТ Системс», генеральный директор<br>
+                1999–2000  ГУЮ «Регистрационная палата Красноярского края»<br>
+                Начальник отдела автоматизации<br>
+                1995–1999 НГДУ "Талинскнефть" АО "Кондпетролеум",  <br>
+                Тюменская область, г. Нягань<br>
+                Ведущий инженер, Заместитель начальника отдела АСУ  
+            </p>
+            <h3>Дополнительные сведения</h3>
+            <p>
+                    Сопредседатель Экспертной группы АСИ в Красноярском крае<br>
+                    Член Совета по улучшению инвестиционного климата при губернаторе Красноярского края <br>
+                    Член Совета по развитию малого и среднего предпринимательства при губернаторе Красноярского края<br>
+                    Член Правительственной Комиссии по вопросам кадрового обеспечения экономики Красноярского края<br>
+                    Включен в резерв управленческих кадров Красноярского края 
+            </p>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span></div>
+            <h2 id="rewards">Награды, достижения</h2>
+            <div class="reward_1"></div><br>
+            <div class="reward_2"></div><br>
+            <div class="reward_3"></div><br>
+            <div class="reward_4"></div><br>
+            <div class="reward_5"></div><br>
+            <div class="reward_6"></div><br>
+            <div class="reward_7"></div><br>
+            <div class="reward_9"></div><br>
+            <div class="reward_12"></div><br>
+            <div class="reward_13"></div><br>
+            <div class="reward_15"></div><br>
+            <div class="reward_16"></div><br>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span></div>
+            <h2 id="projects">Проекты</h2>
+            <h3>Ассоциация технологических компаний «ИТЭРА»</h3>
+            <object data="./presentation/161012_1.pdf" type="application/pdf" width="65%" height="850px">
+                Your browser does not support pdfs, <a href="./presentation/161012_1.pdf">click here to
+                download the file.</a></object>
+                <h3>Концепция территориального развития «АгроЭкополис»</h3>
+            <object data="./presentation/180328_2.pdf" type="application/pdf" width="65%" height="850px">
+                Your browser does not support pdfs, <a href="./presentation/180328_2.pdf">click here to
+                download the file.</a></object>    
+        </main>
+        <footer>
+            Автор статьи: <a class="steam" href="https://steamcommunity.com/id/Saheded/" target="_blank">Saheded</a.steam>
+        </footer>
+    </body>
+    </html>
